@@ -10,8 +10,7 @@ fi
 
 #if ! [ -f 'libSDL.so' ]; then 
 #    ln -s ../lib/libSDL-1.2.so.0    libSDL.so
-
-fi
+#fi
 
 if ! [ -f 'libopenal.so' ]; then 
     ln -s ../lib/libopenal.so.1     libopenal.so
