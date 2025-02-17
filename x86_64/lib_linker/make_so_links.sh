@@ -8,8 +8,9 @@ if ! [ -f 'libpng.so' ]; then
     ln -s ../lib/libpng14.so.14     libpng.so
 fi
 
-if ! [ -f 'libSDL.so' ]; then 
-    ln -s ../lib/libSDL-1.2.so.0    libSDL.so
+#if ! [ -f 'libSDL.so' ]; then 
+#    ln -s ../lib/libSDL-1.2.so.0    libSDL.so
+
 fi
 
 if ! [ -f 'libopenal.so' ]; then 
