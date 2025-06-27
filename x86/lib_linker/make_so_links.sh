@@ -25,6 +25,7 @@ cp --dereference \
 /usr/lib/i386-linux-gnu/libportaudio.so.[0-9] \
 /usr/lib/i386-linux-gnu/libsndio.so.[0-9].0 \
 /usr/lib/i386-linux-gnu/libxslt.so.[0-9] \
+/usr/lib/i386-linux-gnu/libjack.so.[0-9] \
 ../lib
 
 if ! [ -f 'libespeak.so' ]; then
