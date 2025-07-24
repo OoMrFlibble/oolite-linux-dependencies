@@ -32,14 +32,14 @@ cp --dereference \
 #/usr/lib/x86_64-linux-gnu/libxslt.so.[0-9]
 
 #essential
-if ! [ -f 'libespeak.so' ]; then
-    ln -s ../lib/libespeak.so.1 libespeak.so
-fi
+##if ! [ -f 'libespeak.so' ]; then
+##    ln -s ../lib/libespeak.so.1 libespeak.so
+##fi
 
 #essential
-if ! [ -f 'libpng.so' ]; then
-    ln -s ../lib/libpng[0-9][0-9].so.[0-9][0-9] libpng.so
-fi
+##if ! [ -f 'libpng.so' ]; then
+##    ln -s ../lib/libpng[0-9][0-9].so.[0-9][0-9] libpng.so
+##fi
 
 #if ! [ -f 'libSDL.so' ]; then
 #    ln -s ../lib/libSDL-1.2.so.0 libSDL.so
