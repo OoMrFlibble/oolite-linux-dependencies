@@ -16,10 +16,26 @@ if [ "x$1" = "xclean" ] ; then
   exit
 fi
 
+# Currently bundling libgnustep-base
+#
+#  1: The specific version is called for by oolite, but it WILL work with a
+#     symlink to a newer system version.
+#
+#  2: The gdnc daemon from a newer version seems not to work on some
+#     platforms without installing a bucketload of deps. On kubuntu 25.04 I
+#     had to "apt install dh-exec" to get dpkg-architecture. After doing that
+#     once, I apt autopurged dh-exec, and gdnc continued to work with both
+#     versions. Baffling!
+#
+#     gdnc comes from package gnustep-base-runtime
+#
+#     Perhaps someone could figure out why Oolite calls the specific version
+#     of libgnustep-base from the build host.
+#
+#     Else I suppose we could include gdnc into deps/bin and add that to PATH
+#
+
 mkdir -p ../lib
-if [ "x$use_deps" = "x" ] ; then
-  set > ../lib/use_deps.so
-fi
 cp ../lib-static/* ../lib/
 cp --dereference \
 /usr/lib/libgnustep-base.so.[0-9].[0-9][0-9] \
