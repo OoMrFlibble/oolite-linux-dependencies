@@ -35,7 +35,6 @@ fi
 #     Else I suppose we could include gdnc into deps/bin and add that to PATH
 #
 
-# Just bringing libSDL in temporarilyas it may be the mouse-lock-in culprit
 mkdir -p ../lib
 cp ../lib-static/* ../lib/
 cp --dereference \
@@ -43,7 +42,6 @@ cp --dereference \
 /usr/lib/$p-linux-gnu/libicudata.so.[0-9][0-9] \
 /usr/lib/$p-linux-gnu/libicui18n.so.[0-9][0-9] \
 /usr/lib/$p-linux-gnu/libicuuc.so.[0-9][0-9] \
-/usr/lib/$p-linux-gnu/libSDL.so \
 ../lib
 
 #cp -rf /usr/lib/$p-linux-gnu/espeak-ng-data ../../
@@ -59,6 +57,7 @@ cp --dereference \
 #/usr/lib/$p-linux-gnu/libnspr[0-9].so
 #/usr/lib/$p-linux-gnu/libobjc.so.[0-9]
 #/usr/lib/$p-linux-gnu/libxslt.so.[0-9]
+#/usr/lib/$p-linux-gnu/libSDL.so
 
 #essential
 ##if ! [ -f 'libespeak.so' ]; then
